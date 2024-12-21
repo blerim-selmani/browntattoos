@@ -152,6 +152,10 @@ h3.icon-title {
     text-align: center;
 }
 
+span.einleitetext {
+    font-size: 20px;
+}
+
 /* Responsive */
 @media only screen and (min-device-width: 1356px) {
     .footer-row {
@@ -159,8 +163,7 @@ h3.icon-title {
     }
 
     .w3-top .w3-right.w3-hide-small a {
-        padding: 0 15px !important;
-        color: #c0a34b;
+        color: #fff;
         font-size: 22px;
     }
 }
