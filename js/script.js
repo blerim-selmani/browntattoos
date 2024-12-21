@@ -12,7 +12,7 @@ function showSlide(index) {
         currentSlide = index;
     }
 
-    const offset = -currentSlide * 500; // 500px is the width of each image
+    const offset = -currentSlide * 500; // 500px ist die breite des einzelnen bildes
     slides.style.transform = `translateX(${offset}px)`;
 }
 
