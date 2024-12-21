@@ -15,6 +15,42 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,400,600,700&amp;lang=en">
     <script src="js/script.js" defer></script>
+    <style>
+        .mobile-menu {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 50px;
+            right: 10px;
+            background-color: white;
+            border: 1px solid #ccc;
+            z-index: 1000;
+            padding: 10px;
+            width: 150px;
+        }
+        .mobile-menu a {
+            text-decoration: none;
+            color: black;
+            padding: 10px;
+            text-transform: uppercase;
+        }
+        .mobile-menu a:hover {
+            background-color: #f1f1f1;
+        }
+        .hamburger {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        @media (max-width: 768px) {
+            .w3-right.w3-hide-small {
+                display: none;
+            }
+            .hamburger {
+                display: block;
+            }
+        }
+    </style>
 </head>
 <body>
 <!-- Navbar -->
@@ -23,6 +59,13 @@
         <a href="index.html" class="w3-bar-item w3-button">
             <span>Brown2ink Tattoos</span>
         </a>
+        <span class="hamburger" onclick="toggleMenu()">&#9776;</span>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="ueber-mich.html">Über mich</a>
+            <a href="tattoos.html">Tattoos</a>
+            <a href="permanent-makeup.html">Permanent Makeup</a>
+            <a href="kontakt.html">Kontakt</a>
+        </div>
         <div class="w3-right w3-hide-small" style="text-transform: uppercase">
             <a href="ueber-mich.html" class="w3-bar-item w3-button">Über mich</a>
             <a href="tattoos.html" class="w3-bar-item w3-button">Tattoos</a>
@@ -71,5 +114,16 @@ Schreib mir einfach direkt auf Instagram für Anfragen oder Termine. Ich freue m
 <footer class="w3-center w3-black w3-padding-16">
     <p>&copy; 2024 Brown2ink Tattoos. Alle Rechte vorbehalten.</p>
 </footer>
+
+<script>
+    function toggleMenu() {
+        const menu = document.getElementById('mobileMenu');
+        if (menu.style.display === 'flex') {
+            menu.style.display = 'none';
+        } else {
+            menu.style.display = 'flex';
+        }
+    }
+</script>
 </body>
 </html>
