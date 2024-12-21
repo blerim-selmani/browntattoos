@@ -143,6 +143,10 @@ a.w3-bar-item.w3-button {
     text-transform: uppercase;
 }
 
+button.next {
+    right: 10%;
+}
+
 h3.icon-title {
     text-transform: UPPERCASE;
 }
