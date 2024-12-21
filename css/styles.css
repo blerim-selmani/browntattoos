@@ -9,6 +9,10 @@ span.kontakt-text {
     margin-bottom: 20px;
 }
 
+.w3-container.w3-padding-32 {
+    text-align: center;
+}
+
 body {
     font-family: Roboto, sans-serif;
     min-height: 100vh;
