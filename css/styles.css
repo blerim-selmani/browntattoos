@@ -137,6 +137,12 @@ input[type="submit"]:hover {
     background-color: #c0a34b !important;
 }
 
+a.w3-bar-item.w3-button {
+    color: #fff;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
 /* Responsive */
 @media only screen and (min-device-width: 1356px) {
     .footer-row {
