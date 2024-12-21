@@ -3,6 +3,12 @@ html {
     scroll-behavior: smooth;
 }
 
+span.kontakt-text {
+    display: block;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
 body {
     font-family: Roboto, sans-serif;
     min-height: 100vh;
