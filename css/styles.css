@@ -211,6 +211,7 @@ button.next {
     }
     .mobile-menu {
         right: 0;
+        top: 99%;
         width: 100%;
     }
     .w3-container, .w3-content {
