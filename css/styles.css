@@ -129,12 +129,12 @@ input[type="submit"]:hover {
 
 .w3-white, .w3-hover-white:hover {
     color: #000 !important;
-    background-color: #c0a34b;
+    background-color: #c0a34b !important;
 }
 
 .w3-black, .w3-hover-black:hover {
     color: #fff !important;
-    background-color: #c0a34b;
+    background-color: #c0a34b !important;
 }
 
 /* Responsive */
