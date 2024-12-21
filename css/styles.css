@@ -1,0 +1,141 @@
+/* General styles */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-weight: 100;
+}
+
+/* Header styles */
+img.main-logo {
+    max-width: 250px;
+    margin: auto;
+}
+
+.navbar.w3-right.w3-hide-small {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.w3-top {
+    border-bottom: 1px solid #c0a34b;
+}
+
+/* Footer styles */
+.footer-row {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.auflistung-footer {
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Common button styles */
+button.w3-button.w3-black.w3-section {
+    transition: background-color .5s;
+}
+
+button.w3-button.w3-black.w3-section:hover {
+    background-color: #c0a34b;
+}
+
+/* Typography */
+h2.greeting-text {
+    text-align: center;
+    color: #8D895C;
+    font-size: 40px;
+}
+
+h3.icon-title {
+    font-size: 40px;
+    color: #c0a34b;
+    padding: 30px 0 15px;
+    font-weight: 700;
+}
+
+/* Input and form styles */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+input[type="submit"] {
+    background-color: #c0a34b;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #8D895C;
+}
+
+/* Slider styles */
+.slider {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+    max-width: 100%;
+    width: 500px;
+    flex-shrink: 0;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 50px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Responsive */
+@media only screen and (min-device-width: 1356px) {
+    .footer-row {
+        flex-direction: row;
+    }
+
+    .w3-top .w3-right.w3-hide-small a {
+        padding: 0 15px !important;
+        color: #c0a34b;
+        font-size: 22px;
+    }
+}
