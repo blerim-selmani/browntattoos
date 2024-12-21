@@ -20,4 +20,13 @@ function moveSlides(step) {
     showSlide(currentSlide + step);
 }
 
+function toggleMenu() {
+    const menu = document.getElementById('mobileMenu');
+    if (menu.style.display === 'flex') {
+        menu.style.display = 'none';
+    } else {
+        menu.style.display = 'flex';
+    }
+}
+
 showSlide(currentSlide);

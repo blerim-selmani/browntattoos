@@ -15,42 +15,6 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,400,600,700&amp;lang=en">
     <script src="js/script.js" defer></script>
-    <style>
-        .mobile-menu {
-            display: none;
-            flex-direction: column;
-            position: absolute;
-            top: 50px;
-            right: 10px;
-            background-color: white;
-            border: 1px solid #ccc;
-            z-index: 1000;
-            padding: 10px;
-            width: 150px;
-        }
-        .mobile-menu a {
-            text-decoration: none;
-            color: black;
-            padding: 10px;
-            text-transform: uppercase;
-        }
-        .mobile-menu a:hover {
-            background-color: #f1f1f1;
-        }
-        .hamburger {
-            display: none;
-            font-size: 24px;
-            cursor: pointer;
-        }
-        @media (max-width: 768px) {
-            .w3-right.w3-hide-small {
-                display: none;
-            }
-            .hamburger {
-                display: block;
-            }
-        }
-    </style>
 </head>
 <body>
 <!-- Navbar -->
@@ -105,15 +69,5 @@
     <p>&copy; 2024 Brown2ink Tattoos. Alle Rechte vorbehalten.</p>
 </footer>
 
-<script>
-    function toggleMenu() {
-        const menu = document.getElementById('mobileMenu');
-        if (menu.style.display === 'flex') {
-            menu.style.display = 'none';
-        } else {
-            menu.style.display = 'flex';
-        }
-    }
-</script>
 </body>
 </html>
