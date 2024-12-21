@@ -127,6 +127,16 @@ input[type="submit"]:hover {
     cursor: pointer;
 }
 
+.w3-white, .w3-hover-white:hover {
+    color: #000 !important;
+    background-color: #c0a34b;
+}
+
+.w3-black, .w3-hover-black:hover {
+    color: #fff !important;
+    background-color: #c0a34b;
+}
+
 /* Responsive */
 @media only screen and (min-device-width: 1356px) {
     .footer-row {
